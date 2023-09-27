@@ -1,0 +1,57 @@
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para esconder barras de rolagem */
+}
+
+/* Estilo para o container que envolve a imagem e o texto */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% da altura da janela de visualização */
+}
+
+/* Estilo para a imagem dentro do container */
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem para preencher todo o container */
+}
+
+/* Estilo para o texto sobre a imagem */
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o título */
+.texto-sobre-imagem h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o parágrafo */
+.texto-sobre-imagem p {
+    font-size: 1.5rem;
+}
+
+/* Estilo para telas menores (máximo 768px de largura) */
+@media screen and (max-width: 768px) {
+    .texto-sobre-imagem {
+        font-size: 1.5rem;
+    }
+
+    .texto-sobre-imagem h1 {
+        font-size: 1.8rem;
+    }
+
+    .texto-sobre-imagem p {
+        font-size: 1rem;
+    }
+}
